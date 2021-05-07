@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나다빈</title>
+</head>
+<body>
+  <div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3dae65b65d83d699140d2251fa1c63b7"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(35.031197218457834, 126.7807000073902),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+  <ol>
+    <li>이름: 나다빈</li>
+    <li>학과: 전자공학과</li>
+    <li>나이: 21살</li>
+    <li>취미: 유튜브 보기</li>
+    <li>좋아하는 음식: 치킨, 햄버거, 젤리</li>
+    <li>하면서 느낀 점: html 다 까먹은 것 같았는데 하다 보니까 조금씩 생각이 나서 신기했다.</li>
+  </ol>
+</body>
+</html>

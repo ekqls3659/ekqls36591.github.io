@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이유라</title>
+</head>
+<body>
+  <div id="map" style="width:500px;height:400px;"></div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=02cd7637a80b94719ee3628778d5abd4"></script>
+  <script>
+     var container = document.getElementById('map');
+     var options = {
+        center: new kakao.maps.LatLng(37.62029773168852, 127.01352482125124),
+        level: 3
+     };
+
+     var map = new kakao.maps.Map(container, options);
+  </script>
+  <ol>
+    <li>이름: 이유라</li>
+    <li>학과: 기계산업경영공학부</li>
+    <li>나이: 22살</li>
+    <li>취미: 그림 그리기</li>
+    <li>좋아하는 것들: 배드민턴, 음악 듣기, 아이스크림</li>
+    <li>하면서 느낀 점: 민폐가 되지 말아야겠다. 근데 쉽지 않다.</li>
+  </ol>
+</body>
+</html>
